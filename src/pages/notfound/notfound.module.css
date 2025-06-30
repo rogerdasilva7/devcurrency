@@ -1,0 +1,25 @@
+.containerNotfound{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12rem;
+    flex-direction: column;
+}
+.titleNotfound{
+    color: #fff;   
+    margin-bottom: 1rem;
+}
+
+.BackHome{
+    padding: 8px 24px;
+    background-color: #0084ffb9;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-top: 2rem;
+    transition: all 0.5s ease-in-out;
+}
+.BackHome:hover{
+    background-color: #0084ff;
+}
