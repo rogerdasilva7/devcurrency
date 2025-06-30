@@ -37,10 +37,10 @@ export function Detail(){
     }
 
     useEffect(() => {
-
+        const apiKey = import.meta.env.VITE_COINCAP_API_KEY;
         async function getDadosIdApi(){
             try{
-                fetch(`https://rest.coincap.io/v3/assets/${cripto}?apiKey=02d9e57a21018cedf6f972b1bbd5ef24db001531bad38bba54d32a7d676acc06`)
+                fetch(`https://rest.coincap.io/v3/assets/${cripto}?apiKey=${apiKey}`)
                 .then((response) => response.json())
                 .then((data: DataProps) => {
                     if("error" in data){
